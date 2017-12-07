@@ -1,5 +1,5 @@
 ## Phabricator Arcanist 使用指南
-phabricator是facebook开发的codereview工具，截止到目前github star 9064，是目前应用最广泛的codereivew项目，仍在持续更新。目前服务已部署到公司内网 http://10.148.17.222/，欢迎体验。
+phabricator是facebook开发的codereview工具，截止到目前github star 9064，是目前应用最广泛的codereivew项目，仍在持续更新。目前服务已部署到公司内网 http://localhost/，欢迎体验。
 
 ### Phabricator注册
  登录phabricator首页，选择 Register New Account 注册，填写的Email为收取phabricator消息的邮箱，暂时不填写公司邮箱，现在用163邮箱发送邮件，公司邮箱目前还无法接受邮件，建议使用qq或163邮箱。之后登录验证邮箱。
@@ -44,7 +44,7 @@ $ arc set-config editor "vim"
 
 ```
 	"project_id" : "如果有创建project",
-	"conduit_uri" : "http://10.148.17.222/"
+	"conduit_uri" : "http://localhost/"
 ```
 * 执行arc install-certificate 命令安装证书
 
@@ -75,7 +75,7 @@ Reviewers: 指定评审人，填写评审人用户名。
 
 可以使用`arc diff --create`重新创建评审。
 
-之后就可以登陆phabricator [http://10.148.17.222](http://10.148.17.222) 查看评审了。
+之后就可以登陆phabricator [localhost](localhost) 查看评审了。
 
 ### 项目中使用phabricator
 
@@ -93,7 +93,7 @@ ssh-keygen -t rsa
 setting=》SSH Public Keys=》Upload Public Key 上传 id_rsa.pub 内容。
 运行以下命令测试
 
-`echo {} | ssh git@10.148.17.222 conduit conduit.ping`
+`echo {} | ssh git@localhost conduit conduit.ping`
 
 返回以下结果表示配置成功
 
