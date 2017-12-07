@@ -2,7 +2,7 @@
 phabricator是facebook开发的codereview工具，截止到目前github star 9064，是目前应用最广泛的codereivew项目，仍在持续更新。目前服务已部署到公司内网 http://localhost/，欢迎体验。
 
 ### Phabricator注册
- 登录phabricator首页，选择 Register New Account 注册，填写的Email为收取phabricator消息的邮箱，暂时不填写公司邮箱，现在用163邮箱发送邮件，公司邮箱目前还无法接受邮件，建议使用qq或163邮箱。之后登录验证邮箱。
+ 登录phabricator首页，选择 Register New Account 注册，填写的Email为收取phabricator消息的邮箱，暂时只支持qq邮箱，过几天换一个邮件服务。
  
 现在可以在Phabricator使用部分服务，比如创建task，编写wiki等，提交版本变更还需要arcanist工具。
 
