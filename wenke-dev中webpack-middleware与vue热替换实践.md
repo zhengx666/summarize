@@ -1,4 +1,3 @@
-###wenke-dev中webpack-middleware与vue热替换实践
 模块热替换是webpack提供的最有用的功能之一，对于vue来说，由vue-cli生成的脚手架工具展示了如何使用webpack-dev-server实现热替换，但是对于前后端没有分离的业务或者有自己定制的打包工具，基于webpack-middleware定制热加载方案更加方便。
 
 对于一般的热替换js代码，业务代码需要侵入一部分代码以实现模块的热替换。如
